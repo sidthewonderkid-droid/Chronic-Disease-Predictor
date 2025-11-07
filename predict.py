@@ -27,7 +27,7 @@ elif user_input == "Obesity":
     target = "ObesityCategory"
 elif user_input == "Diabetes":
     disease = "diabetes_model.joblib"
-    df = "diabetes.csv"
+    dataset = "diabetes.csv"
     target = "Outcome"
 
 model = joblib.load(disease)
@@ -103,4 +103,5 @@ Please respond with a structured, friendly, and helpful summary.
 
 # Display model output
     st.write("\nGemini Response:\n")
+
     st.write(response.text)
